@@ -13,8 +13,7 @@ def main():
     window = sg.Window('SSH Backup Tool', layout)
     while True:  # The Event Loop
         event, values = window.read()
-        print(event, values)
-        # print(event, values) #debug
+        # print(event, values) #to uncomment debug
         if event in (None, 'Exit', 'Cancel'):
             break
         if event == 'Submit':
@@ -23,8 +22,6 @@ def main():
                 con.connect_ssh(con.default_save, values['Username'], values['Password'])
             except Exception as e:
                 sg.popup(e)
-
-            print(values['Username'])
 
 
 if __name__ == '__main__':

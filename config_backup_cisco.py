@@ -1,4 +1,3 @@
-import sys
 import paramiko 
 import os
 import time

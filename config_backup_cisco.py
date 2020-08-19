@@ -7,8 +7,14 @@ from tkinter import constants, filedialog  #GUI for dialog box Python 3
 from datetime import date
 from getpass import getpass
 
-#TODO Update default dir for TK open file, Add additions Exceptions, Add CLI checks
-
+'''
+TODO: 
+Add Main Def,
+Update default dir for TK open file, 
+Add additions Exceptions, 
+Add CLI checks,
+input for path(RAW)
+'''
 os.chdir("Z:\Config BackUp") #Default Dir
 
 today = date.today()
